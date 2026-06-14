@@ -1,0 +1,73 @@
+Module 14 Assignment
+Part 1: Theory Questions
+Server & Client Architecture
+1. What is the difference between Client-side and Server-side rendering?
+Client-side rendering (CSR) generates web page content in the user's browser using JavaScript. The server sends a basic HTML file, and the browser builds the page.
+Server-side rendering (SSR) generates the complete HTML page on the server before sending it to the browser. This allows the page to load with content already available.
+2. Explain the Request-Response Model with a simple example.
+The Request-Response Model is the communication process between a client and a server.
+Example:
+When a user visits a website, the browser sends a request to the server asking for the webpage. The server processes the request and sends back a response containing the webpage data.
+3. What happens when a user visits a website in their browser?
+1.The user enters a URL in the browser.
+2.The browser sends an HTTP request to the server.
+3.The server processes the request.
+4.The server returns an HTTP response.
+5.The browser renders the webpage and displays it to the user.
+
+Routing, Controllers & Middleware
+4. What is Routing in a web application?
+Routing is the process of connecting URLs or endpoints to specific functions that handle requests and return responses.
+5. What is a Controller and why is it used?
+A Controller is a function that contains the business logic for handling requests and sending responses. It helps keep code organized and easier to maintain.
+6. What is Middleware?
+Middleware is a function that runs between receiving a request and sending a response. It can modify requests, perform checks, log information, or execute additional tasks.
+7. Explain the difference between Controllers and Middleware.
+Controllers handle the main application logic and generate responses.
+Middleware performs tasks before the controller executes, such as authentication, logging, validation, and security checks.
+8. Give one real-life example where middleware can be useful.
+Authentication middleware can check whether a user is logged in before allowing access to a protected route.
+
+JSON Fundamentals
+9. What is JSON?
+JSON (JavaScript Object Notation) is a lightweight format used to store and exchange data between applications.
+10. Why is JSON commonly used in APIs?
+JSON is easy to read, lightweight, language-independent, and supported by almost all programming languages.
+11. Write a valid JSON object containing the following information.
+{
+  "name": "John Doe",
+  "age": 25,
+  "course": "MERN Stack"
+}
+12. Write three best practices for creating JSON data.
+1.Use meaningful and consistent key names.
+2.Follow proper JSON syntax.
+3.Keep the structure simple and organized.
+
+Web Security
+13. What is a DOS (Denial of Service) Attack?
+A DOS attack is a cyberattack where a single source floods a server with excessive requests, making it unavailable to legitimate users.
+14. What is a DDOS (Distributed Denial of Service) Attack?
+A DDOS attack uses multiple devices or systems to overwhelm a server with massive traffic, making the service unavailable.
+15. What is Rate Limiting and how does it help protect a server?
+Rate limiting restricts how many requests a user can make within a specific time period. It helps prevent abuse, spam, and DOS attacks.
+
+Cookies & Authentication
+16. What is a Cookie?
+A cookie is a small piece of data stored in the user's browser by a website to remember information such as login sessions and preferences.
+17. What is an HTTP-Only Cookie?
+An HTTP-Only Cookie is a cookie that cannot be accessed through client-side JavaScript and can only be accessed by the server.
+18. Why are HTTP-Only Cookies more secure than regular cookies?
+They help prevent malicious scripts from accessing sensitive cookie data, reducing the risk of XSS attacks.
+19. What is Cookie Hijacking?
+Cookie hijacking is an attack where an attacker steals a user's session cookie and uses it to impersonate the user.
+
+Performance & Scalability
+20. What is a CDN (Content Delivery Network)?
+A CDN is a network of distributed servers that deliver website content from locations closer to users.
+21. How does a CDN improve website performance?
+A CDN reduces loading time by serving content from the nearest server, reducing latency and server load.
+22. What is Load Balancing?
+Load balancing is the process of distributing incoming traffic across multiple servers.
+23. Why is Load Balancing important for large applications?
+It improves performance, increases reliability, prevents server overload, and ensures high availability.
